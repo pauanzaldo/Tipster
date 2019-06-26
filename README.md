@@ -29,7 +29,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 Basic functionality, settings feature with custom tip
-<img src='http://g.recordit.co/t6c9ezmbUu.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> <img src='http://g.recordit.co/gHZnFVU4ek.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/t6c9ezmbUu.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> <img src='http://g.recordit.co/gHZnFVU4ek.gif' title='Second feature' width='' alt='Second Feature' />
 
 
 ## Notes

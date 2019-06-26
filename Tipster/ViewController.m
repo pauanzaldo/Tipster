@@ -23,23 +23,48 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    // read the saved value for tip percent from Settings
+    
+    [self recalculateTip];
+}
+
 - (IBAction)onTap:(id)sender {
     NSLog(@"Hello");
     [self.view endEditing:YES];
 }
 
 - (IBAction)onEdit:(id)sender {
+    
+    [self recalculateTip];
+}
+
+- (void)recalculateTip {
+    
+    double tipPercentage = 0.0;
+    
+    
+    if(self.tipControl.selectedSegmentIndex < 3) {
+        NSArray *percentages = @[@(0.15), @(0.2), @(0.22)];
+        
+        tipPercentage = [percentages[self.tipControl.selectedSegmentIndex]doubleValue];
+        
+        
+    } else {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        tipPercentage = [defaults doubleForKey:@"userTip"] / 100;
+        
+    }
+    
     double bill = [self.billField.text doubleValue];
-    
-    NSArray *percentages = @[@(0.15), @(0.2), @(0.22)];
-    
-    double tipPercentage = [percentages[self.tipControl.selectedSegmentIndex]doubleValue];
     double tip = tipPercentage * bill;
     double total = bill + tip;
     
     self.tipLabel.text = [NSString stringWithFormat: @"$%.2f", tip];
     self.totalLabel.text = [NSString stringWithFormat: @"$%.2f", total];
 }
+
 - (IBAction)onEditingBegin:(id)sender {
     
     [UIView animateWithDuration:0.2 animations:^{

@@ -15,6 +15,7 @@
 		117E11F522C2C304002BAA7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 117E11F422C2C304002BAA7A /* main.m */; };
 		117E11FF22C2C305002BAA7A /* TipsterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117E11FE22C2C305002BAA7A /* TipsterTests.m */; };
 		117E120A22C2C305002BAA7A /* TipsterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117E120922C2C305002BAA7A /* TipsterUITests.m */; };
+		117E121922C2ED63002BAA7A /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117E121822C2ED63002BAA7A /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		117E120522C2C305002BAA7A /* TipsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		117E120922C2C305002BAA7A /* TipsterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsterUITests.m; sourceTree = "<group>"; };
 		117E120B22C2C305002BAA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		117E121722C2ED63002BAA7A /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		117E121822C2ED63002BAA7A /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +109,10 @@
 				117E11E822C2C303002BAA7A /* ViewController.h */,
 				117E11E922C2C303002BAA7A /* ViewController.m */,
 				117E11EB22C2C303002BAA7A /* Main.storyboard */,
-				117E11EE22C2C304002BAA7A /* Assets.xcassets */,
+				117E121722C2ED63002BAA7A /* SettingsViewController.h */,
+				117E121822C2ED63002BAA7A /* SettingsViewController.m */,
 				117E11F022C2C304002BAA7A /* LaunchScreen.storyboard */,
+				117E11EE22C2C304002BAA7A /* Assets.xcassets */,
 				117E11F322C2C304002BAA7A /* Info.plist */,
 				117E11F422C2C304002BAA7A /* main.m */,
 			);
@@ -265,6 +270,7 @@
 				117E11EA22C2C303002BAA7A /* ViewController.m in Sources */,
 				117E11F522C2C304002BAA7A /* main.m in Sources */,
 				117E11E722C2C303002BAA7A /* AppDelegate.m in Sources */,
+				117E121922C2ED63002BAA7A /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tips-->
+        <!--Tip Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -77,6 +77,7 @@
                                     <segment title="15%"/>
                                     <segment title="20%"/>
                                     <segment title="22%"/>
+                                    <segment title="Custom"/>
                                 </segments>
                                 <connections>
                                     <action selector="onEdit:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rt0-qV-3Tn"/>
@@ -90,7 +91,13 @@
                             <outletCollection property="gestureRecognizers" destination="5Rz-eu-7Yn" appends="YES" id="xpR-hV-YI0"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tips" id="OUX-qm-0rX"/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="OUX-qm-0rX">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="GpW-Cq-dzI">
+                            <connections>
+                                <segue destination="kMm-CJ-BuR" kind="push" id="nkB-Wg-xv6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="pve-Qz-C18" id="FdB-nM-feY"/>
                         <outlet property="tipControl" destination="5hL-7S-gbt" id="s3S-M6-eUQ"/>
@@ -106,6 +113,54 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="109.29535232383809"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="iS6-YG-Ojn">
+            <objects>
+                <viewController id="kMm-CJ-BuR" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FZA-A3-fE8" customClass="Settings">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter custom tip: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pif-9k-sCJ">
+                                <rect key="frame" x="10" y="100" width="135" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPe-T6-E6f">
+                                <rect key="frame" x="350" y="101" width="14" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tyz-wG-GsO">
+                                <rect key="frame" x="153" y="96" width="189" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="onEdit:" destination="BYZ-38-t0r" eventType="editingChanged" id="3wR-Ml-wKv"/>
+                                    <action selector="onEdit:" destination="kMm-CJ-BuR" eventType="editingChanged" id="yAu-Rc-Jv8"/>
+                                    <action selector="onEditingBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="7BM-ra-D8E"/>
+                                    <action selector="onEditingEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="hDR-4b-gi7"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nLx-mv-sCm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="22m-EZ-2rh"/>
+                    <connections>
+                        <outlet property="customTipField" destination="tyz-wG-GsO" id="C6F-0a-E7c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wts-1M-mhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1925.5999999999999" y="639.13043478260875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8gj-ZU-H2N">

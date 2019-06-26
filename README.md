@@ -24,12 +24,18 @@ The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
 
-## Video Walkthrough
+## Simple Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implementation with the basic features:
 
-Basic functionality, settings feature with custom tip
-<img src='http://g.recordit.co/t6c9ezmbUu.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> <img src='http://g.recordit.co/gHZnFVU4ek.gif' title='Second feature' width='' alt='Second Feature' />
+<img src='http://g.recordit.co/t6c9ezmbUu.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
+## Custom Tip Walkthrough
+
+Here's a walkthrough of implementation with custom tip:
+
+<img src='http://g.recordit.co/gHZnFVU4ek.gif' title='Second feature' width='' alt='Second Feature' />
 
 
 ## Notes

@@ -28,7 +28,12 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+Basic functionality 
 <img src='http://g.recordit.co/t6c9ezmbUu.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Settings feature with custom tip
+
+<img src='http://g.recordit.co/gHZnFVU4ek.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 ## Notes
